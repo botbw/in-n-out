@@ -1,4 +1,4 @@
-[submodule "dataset_preprocessing/ffhq/Deep3DFaceRecon_pytorch"]
-	path = dataset_preprocessing/ffhq/Deep3DFaceRecon_pytorch
+[submodule "data_preprocessing/ffhq/Deep3DFaceRecon_pytorch"]
+	path = data_preprocessing/ffhq/Deep3DFaceRecon_pytorch
 	url = https://github.com/botbw/Deep3DFaceRecon_pytorch.git
 

@@ -30,12 +30,12 @@ out_folder = args.indir.split("/")[-2] if args.indir.endswith("/") else args.ind
 # command = "python landmark68_5.py --landmark68_path=" + os.path.join(args.indir.replace('data/frames', 'data/landmarks_68'), 'landmarks.npy')  + " --frame_root=" + args.indir
 # command = "python landmark68_5.py --landmark68_path=" + os.path.join(args.indir.replace('data/datasets', 'data/datasets/landmarks_68'), 'landmarks.npy')  + " --frame_root=" + args.indir
 
-print(command)
-os.system(command)
+# print(command)
+# os.system(command)
 
 # run Deep3DFaceRecon
 os.chdir('Deep3DFaceRecon_pytorch')
-command = "python test.py --img_folder=" + args.indir + " --gpu_ids=0 --name=pretrained --epoch=20"
+command = "python test.py --use_opengl False --img_folder=" + args.indir + " --gpu_ids=0 --name=pretrained --epoch=20"
 print(command)
 os.system(command)
 os.chdir('..')
